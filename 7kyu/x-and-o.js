@@ -22,3 +22,13 @@ function XO(str) {
     })
     return countX == countO ? true : false; //compare counts 
 }
+
+//filter and split
+const XO = str => {
+    str = str.toLowerCase().split(''); //lower case and split into arr
+    
+    return str.filter(x => x == 'x').length === str.filter(o => o == 'o').length;
+    //filter elements matching x in the string array
+    //filter elements matching o in the string array
+    //compare the length of each filter. (returns true if both match)
+}
