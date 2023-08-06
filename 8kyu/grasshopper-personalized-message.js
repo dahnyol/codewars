@@ -18,3 +18,12 @@ personalMessage('john', 'bob') // hello guest
 personalMessage('bob', 'bob') /// hello boss
 
 const greet = (name, owner) => name === owner ? 'Hello boss' : 'Hello guest';
+
+
+function greet (name, owner) {
+    const greetings = {
+      [true] :'Hello boss',
+      [false]:'Hello guest',
+    }   
+    return greetings[name === owner]
+};
