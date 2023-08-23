@@ -8,10 +8,12 @@
 //R return reverse words of each word in string
 //E
 function reverseWords(sentence) {
-//P //use method split and reverse
-    //old way is init new sentence variable empty array
-    //iterate over sentence and add/push word to the empty array
-    //join the empty array together as a string and return it
+//P // use method split and reverse
+    // or for loop instead of reverse method
+    // init new sentence variable empty array
+    // split string into array
+    // iterate over sentence and add/push word to the empty array
+    // join the empty array together as a string and return it
 }
 
 
