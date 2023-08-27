@@ -13,13 +13,22 @@ function checkVal(array, x){
     //return T if condition is found else false
 }
 
-function checkVal(array, x) {
-    return (array.includes(x));
+function check(a, x) {
+    return a.includes(x);
 }
 
 
-function checkVal(array, x) {
-    for(let i = 0; i < array.length; i++) {
-        return array[i] == x;
+function check(a,x){
+    return a.indexOf(x) > -1 ? true : false;
+};
+
+
+function check(a,x){
+    let result = false;
+    for(i = 0; i < a.length; i++){
+      if(a[i]==x){
+      result  = true;
+      }
     }
-}
+    return result;
+};
