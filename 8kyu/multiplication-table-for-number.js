@@ -38,3 +38,7 @@ function multiTable(number){
     }
     return result.join('\n');
 }
+
+
+const multiTable = number => [...Array(10)].map((_, index) => 
+    `${++index} * ${number} = ${index * number}`).join('\n');
