@@ -52,7 +52,6 @@ function distinct(array){
     });
 }
 
-
 // use filter + indexOf
 function distinct(arr){
     function onlyUnique(value, index, self){
@@ -63,9 +62,25 @@ function distinct(arr){
     return unique;
 }
 
-// use set [...new Set(newArray)]
+// use spread and set [...new Set(newArray)]
 function distinct(a){
     return [...new Set(a)];
 }
 
-// performance wise 2020: set > object > helper [] > filter + indexOf
+// forEach method
+function distinct(arr){
+    let uniqueArr = [];
+    arr.forEach(element => {
+        if(!uniqueArr.includes(element)) {
+            uniqueArr.push(element);
+        }
+    })
+    return uniqueArr;
+}
+
+// use reduce
+function distinct(a){
+    a.reduce((acc, curr) => {
+        return acc.includes(curr) ? acc : [...acc, curr];
+    }, [])
+}
