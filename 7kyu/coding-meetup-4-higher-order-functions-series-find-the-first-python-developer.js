@@ -41,11 +41,8 @@ function getFirstPython(list){
 }
 
 function getFirstPython(list){
-    for(let i = 0; i < list.length; i++){
-        if(list[i].language === 'Python'){
+    for(let i = 0; i < list.length; i++)
+        if(list[i].language === 'Python')
             return `${list[i].firstName}, ${list[i].country}`
-        } else {
-            return 'THere will be no Python developers'
-        }
-    }
+        return 'There will be no Python developers'
 }
