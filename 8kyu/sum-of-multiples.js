@@ -18,8 +18,8 @@
 // function sumMul(n,m){
 // let res = 0
 // if (m < 0) return 'INVALID'
-// for(let i = n; i < m; i++){
-    // res += n
+// for(let i = n; i < m; i+n){
+    // res += i
 // return res
 // reduce function
 
@@ -39,7 +39,7 @@ const sumMul = (n, m) =>
     : Array.from({ length: m })
     .reduce((acc, _, index) => (index % n === 0 ? acc + index : acc),0)
 
-    
+
 function sumMul(n,m){
     let result = 0;
     let counter = 0
